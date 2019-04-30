@@ -1,13 +1,12 @@
 <template>
   <v-app id="app">
-    <v-navigation-drawer app></v-navigation-drawer>
-    <v-toolbar app></v-toolbar>
+    <router-view name="form"></router-view>
     <v-content>
       <v-container fluid>
-        <router-view></router-view>
+        <router-view name="index"></router-view>
       </v-container>
     </v-content>
-    <v-footer app></v-footer>
+    <router-view name="footer"></router-view>
   </v-app>
 </template>
 

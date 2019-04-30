@@ -1,10 +1,10 @@
 <template>
   <div>
-    <v-card>
+    <v-card tile dark>
       <v-container grid-list-lg>
         <v-layout row wrap>
-          <v-flex xs6 v-for="data in lives" :key="data.id">
-            <v-card color="primary" class="white--text">
+          <v-flex xs12 v-for="data in lives" :key="data.id">
+            <v-card color="primary" class="white--text" tile raised>
               <v-card-title primary-title>
                 <h3 class="headline mb-0">
                   <div>{{ data.artist }}</div>
@@ -14,7 +14,10 @@
                 <div>{{ data.description }}</div>
               </v-card-text>
               <v-card-text>
-                <div>{{ data.ticketAvailableDate|printDate }}</div>
+                <div>日時: {{ data.ticketAvailableDate|printDate }}</div>
+              </v-card-text>
+              <v-card-text>
+                <div>場所: {{ data.place }}</div>
               </v-card-text>
               <v-card-actions>
                 <v-btn outline color="gray" :href="data.link" target="_blank">
@@ -90,7 +93,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 680px;
+  width: 1280px;
   margin: 100px 0;
 }
 </style>
