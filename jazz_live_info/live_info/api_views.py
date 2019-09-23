@@ -1,10 +1,15 @@
 from rest_framework.viewsets import ModelViewSet
-from rest_framework import generics, status  # 追加
-from rest_framework.response import Response  # 追加
+from rest_framework import generics, status
+from rest_framework.response import Response
 from .models import Live
-from .serializers import LiveSerializer
+from .serializers import LiveSerializer, LiveFilter
 
 
 class LiveViewSet(ModelViewSet):
-    queryset = Live.objects.all()  # ここが対象となるレコードの指定．今回は全部
-    serializer_class = LiveSerializer  # 戻り値を定義したSerializer
+    queryset = Live.objects.all()
+    serializer_class = LiveSerializer
+
+class SearchLiveViewSet(ModelViewSet):
+    queryset = Live.objects.all()
+    serializer_class = LiveSerializer
+    filter_class = LiveFilter

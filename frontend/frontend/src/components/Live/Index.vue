@@ -1,22 +1,22 @@
 <template>
   <div>
-    <v-card tile dark>
+    <v-card color="blue-grey darken-4" tile raised>
       <v-container grid-list-lg>
         <v-layout row wrap>
-          <v-flex xs12 v-for="data in lives" :key="data.id">
-            <v-card color="primary" class="white--text" tile raised>
+          <v-flex xs3 v-for="data in lives" :key="data.id">
+            <v-card color="cyan lighten-4" tile>
               <v-card-title primary-title>
                 <h3 class="headline mb-0">
                   <div>{{ data.artist }}</div>
                 </h3>
               </v-card-title>
-              <v-card-text>
+              <v-card-text class="subheading font-weight-medium">
                 <div>{{ data.description }}</div>
               </v-card-text>
-              <v-card-text>
+              <v-card-text class="subheading font-weight-medium">
                 <div>日時: {{ data.ticketAvailableDate|printDate }}</div>
               </v-card-text>
-              <v-card-text>
+              <v-card-text class="subheading font-weight-medium">
                 <div>場所: {{ data.place }}</div>
               </v-card-text>
               <v-card-actions>

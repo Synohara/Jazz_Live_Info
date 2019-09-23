@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'live_info',
     'rest_framework',
-    'corsheaders'
+    'corsheaders',
+    'django_filters',
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [
@@ -138,5 +140,6 @@ REST_FRAMEWORK = {
         'djangorestframework_camel_case.parser.CamelCaseJSONParser',
         'rest_framework.parsers.FormParser',
         'rest_framework.parsers.MultiPartParser'
-    )
+    ),
+    'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend',)
 }

@@ -4,4 +4,4 @@ from . import api_views
 
 
 live_router = DefaultRouter()
-live_router.register(r'', api_views.LiveViewSet)
+live_router.register(r'', api_views.SearchLiveViewSet)
