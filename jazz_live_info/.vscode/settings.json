@@ -1,6 +1,0 @@
-{
-    "python.pythonPath": "/Users/shinoharamakoto/.virtualenvs/jazz-live-info/bin/python",
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
-    "python.linting.enabled": true
-}
