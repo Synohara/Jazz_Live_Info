@@ -1,6 +1,6 @@
 autopep8==1.4.4
 Django==4.2.22
-django-cors-headers==2.5.2
+django-cors-headers==2.5.3
 djangorestframework==3.15.2
 djangorestframework-camel-case==1.0.3
 entrypoints==0.3
