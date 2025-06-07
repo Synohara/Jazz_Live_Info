@@ -1,4 +1,4 @@
-autopep8==1.4.4
+autopep8==1.7.0
 Django==4.2.22
 django-cors-headers==2.5.3
 djangorestframework==3.15.2
