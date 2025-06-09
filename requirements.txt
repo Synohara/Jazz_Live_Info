@@ -8,7 +8,7 @@ flake8==3.9.2
 mccabe==0.7.0
 pycodestyle==2.13.0
 pyflakes==2.5.0
-pytz==2019.1
+pytz==2019.3
 sqlparse==0.5.3
 django-filter==2.4.0
 django-crispy-forms==1.14.0
