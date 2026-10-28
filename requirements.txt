@@ -4,7 +4,7 @@ django-cors-headers==4.9.0
 djangorestframework==3.18.3
 djangorestframework-camel-case==1.4.2
 entrypoints==0.4.2
-flake8==7.4.1
+flake8==7.5.0
 mccabe==0.7.0
 pycodestyle==2.15.0
 pyflakes==4.0.3
